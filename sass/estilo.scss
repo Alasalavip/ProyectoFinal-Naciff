@@ -1,0 +1,218 @@
+@import "fotos";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    min-height: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    margin-bottom: 40px;
+}
+footer {
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-size: cover;
+    margin-right: 25px;
+    //Black cat studios//
+    p {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    //como se orientan los links del footer//
+    ul {
+        text-align: center;
+        font-size: 40px;
+    }
+    //como se ven los links del footer//
+    a {
+        color: #565A63;
+        margin: 10px;
+    }
+}
+main {
+    height: 100vh;
+    background-image: $myfondo;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    overflow-y: scroll;
+}
+
+.flecha {
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        border: 3px solid black;
+        color: black;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+}
+.nav-link {
+    font-size: 24px;
+}
+.slide {
+    margin: auto;
+}
+.noticias {
+    margin: auto;
+    width: 1500px;
+    margin-top: 20px;
+    .card-img-top {
+        max-height: 400px;
+    }
+}
+form {
+    margin: auto;
+    background-image: $myform;
+    padding: 20px;
+    font-weight: 600;
+    color: white;
+    border-radius: 1%;
+    min-width: 380px; 
+        textarea {
+            display: flex;
+            flex-wrap: wrap;
+            flex-shrink: 50%;
+            width: 100%;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        } 
+}
+//vista mobil//
+@media only screen and (min-width:280px) and (max-width:991px) {
+   //nav bar no se ve en vista mobil//
+    .noham {
+        display:none;
+    }
+    //la pagina "sobre nosotros" se divide en izquierda y derecha//
+    .nosotros {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-image: $myfondo;
+        //parte izquierda//
+        .nleft {
+            width: 100%;
+            background-image: $myofi;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        //parte derecha//
+        .nright{
+            width:100%;
+            padding: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            p {
+                font-size: 15px;
+                margin-bottom: 0px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            h3 {
+                text-align: center;
+                padding-bottom: 0px;
+                text-transform: capitalize;
+            }
+            //mas info//
+            a {
+                height: 50px;
+                background-color: white;
+                color: black;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                border-radius: 10px;
+                border: 3px solid black;
+                font-weight: 600;
+                    &:hover{
+                        background-color: darkgray;
+                        }
+            }
+            
+        }
+    }
+    .juegos {
+        display: none;
+    }
+    .mobil {
+        max-width: 1500px;
+        max-height: 1500px;
+        margin: auto;
+    }
+}
+@media only screen and (min-width:992px) {
+   .hamburguesa {
+       display: none;
+   } 
+   .juegos {
+    max-width: 1500px;
+    max-height: 1500px;
+    margin: auto;
+    margin-bottom: 20px;
+   }
+   .mobil {
+       display: none;
+   }
+   form {
+      min-width: 600px;
+   }
+   .nosotros {
+      height: 600px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      .nleft {
+          width: 50%;
+          background-image: $myofi;
+          background-size: cover;
+          background-position: center;
+      }
+      .nright {
+        width: 50%;
+        padding: 20px;
+        p{
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            text-align: center;
+            padding-bottom: 10px;
+            text-transform: capitalize;
+        }
+        a {
+            height: 50px;
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: 10px;
+            border: 3px solid black;
+            font-weight: 600;
+            &:hover {
+                background-color: darkgray;
+            }
+        }
+      }
+  }
+}

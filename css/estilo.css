@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-size: cover;
+  margin-right: 25px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer ul {
+  text-align: center;
+  font-size: 40px;
+}
+
+footer a {
+  color: #565A63;
+  margin: 10px;
+}
+
+main {
+  height: 100vh;
+  background-image: url(/imagenes/fondo.JPG);
+  width: 100%;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: scroll;
+}
+
+.flecha {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border: 3px solid black;
+  color: black;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+}
+
+.nav-link {
+  font-size: 24px;
+}
+
+.slide {
+  margin: auto;
+}
+
+.noticias {
+  margin: auto;
+  width: 1500px;
+  margin-top: 20px;
+}
+
+.noticias .card-img-top {
+  max-height: 400px;
+}
+
+form {
+  margin: auto;
+  background-image: url(/imagenes/jeroglificos.jpg);
+  padding: 20px;
+  font-weight: 600;
+  color: white;
+  border-radius: 1%;
+  min-width: 380px;
+}
+
+form textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-negative: 50%;
+      flex-shrink: 50%;
+  width: 100%;
+}
+
+form a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 991px) {
+  .noham {
+    display: none;
+  }
+  .nosotros {
+    height: 100vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-image: url(/imagenes/fondo.JPG);
+  }
+  .nosotros .nleft {
+    width: 100%;
+    background-image: url(/imagenes/oficina.webp);
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nosotros .nright {
+    width: 100%;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nosotros .nright p {
+    font-size: 15px;
+    margin-bottom: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nosotros .nright h3 {
+    text-align: center;
+    padding-bottom: 0px;
+    text-transform: capitalize;
+  }
+  .nosotros .nright a {
+    height: 50px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-weight: 600;
+  }
+  .nosotros .nright a:hover {
+    background-color: darkgray;
+  }
+  .juegos {
+    display: none;
+  }
+  .mobil {
+    max-width: 1500px;
+    max-height: 1500px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hamburguesa {
+    display: none;
+  }
+  .juegos {
+    max-width: 1500px;
+    max-height: 1500px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .mobil {
+    display: none;
+  }
+  form {
+    min-width: 600px;
+  }
+  .nosotros {
+    height: 600px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .nosotros .nleft {
+    width: 50%;
+    background-image: url(/imagenes/oficina.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  .nosotros .nright {
+    width: 50%;
+    padding: 20px;
+  }
+  .nosotros .nright p {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .nosotros .nright h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+  }
+  .nosotros .nright a {
+    height: 50px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-weight: 600;
+  }
+  .nosotros .nright a:hover {
+    background-color: darkgray;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
