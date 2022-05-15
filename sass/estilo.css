@@ -17,10 +17,10 @@ body {
 }
 
 footer {
-  left: 0;
-  bottom: 0;
   height: 60px;
   width: 100%;
+  left: 0;
+  bottom: 0;
   background-size: cover;
   margin-right: 25px;
 }
@@ -44,8 +44,8 @@ footer a {
 
 main {
   height: 100vh;
-  background-image: url(/imagenes/fondo.JPG);
   width: 100%;
+  background-image: url(/imagenes/fondo.JPG);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,7 +67,7 @@ main {
   border-radius: 50%;
 }
 
-.nav-link {
+.nav-link, form {
   font-size: 24px;
 }
 
@@ -85,6 +85,15 @@ main {
   max-height: 400px;
 }
 
+.display, form textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
 form {
   margin: auto;
   background-image: url(/imagenes/jeroglificos.jpg);
@@ -96,19 +105,37 @@ form {
 }
 
 form textarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-negative: 50%;
       flex-shrink: 50%;
-  width: 100%;
 }
 
 form a {
   text-decoration: none;
   color: white;
+}
+
+.card--c1 {
+  background-color: white;
+}
+
+.card--c2 {
+  background-color: #fafafa;
+}
+
+.card--c3 {
+  background-color: #f2f2f2;
+}
+
+.card--c4 {
+  background-color: #ebebeb;
+}
+
+.card--c5 {
+  background-color: #e6e6e6;
+}
+
+.card--c6 {
+  background-color: #cccccc;
 }
 
 @media only screen and (min-width: 280px) and (max-width: 991px) {

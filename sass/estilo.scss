@@ -13,11 +13,14 @@ body {
     margin: 0;
     margin-bottom: 40px;
 }
+@mixin size($ancho,$alto) {
+    height: $alto;
+    width: $ancho;
+}
 footer {
+    @include size(100%, 60px);
     left: 0;
     bottom: 0;
-    height: 60px;
-    width: 100%;
     background-size: cover;
     margin-right: 25px;
     //Black cat studios//
@@ -36,20 +39,18 @@ footer {
     a {
         color: #565A63;
         margin: 10px;
-    }
-}
+        }
+   } 
 main {
-    height: 100vh;
+    @include size(100%, 100vh);
     background-image: $myfondo;
-    width: 100%;
     background-size: cover;
     display: flex;
     overflow-y: scroll;
 }
 
 .flecha {
-        height: 40px;
-        width: 40px;
+    @include size(40px, 40px);
         background-color: white;
         border: 3px solid black;
         color: black;
@@ -74,7 +75,13 @@ main {
         max-height: 400px;
     }
 }
+.display {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%
+}
 form {
+    @extend .nav-link;
     margin: auto;
     background-image: $myform;
     padding: 20px;
@@ -83,15 +90,28 @@ form {
     border-radius: 1%;
     min-width: 380px; 
         textarea {
-            display: flex;
-            flex-wrap: wrap;
+           @extend .display;
             flex-shrink: 50%;
-            width: 100%;
         }
         a {
             text-decoration: none;
             color: white;
         } 
+}
+
+$base: white;
+$cards: (
+    c1: $base,
+    c2: darken($base, 2%),
+    c3: darken($base, 5%),
+    c4:darken($base, 8%),
+    c5:darken($base, 10%),
+    c6: darken($base, 20%),
+);
+@each $c, $col in $cards {
+    .card--#{$c}{
+      background-color: $col;
+    }
 }
 //vista mobil//
 @media only screen and (min-width:280px) and (max-width:991px) {
@@ -163,6 +183,7 @@ form {
    .hamburguesa {
        display: none;
    } 
+
    .juegos {
     max-width: 1500px;
     max-height: 1500px;
