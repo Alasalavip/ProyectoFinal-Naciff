@@ -142,44 +142,29 @@ form a {
   .noham {
     display: none;
   }
-  .nosotros {
-    height: 100vh;
-    width: 100%;
+  .displaym, .nosotros, .nosotros .nleft, .nosotros .nright, .nosotros .nright p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 100%;
+  }
+  .nosotros {
+    height: 100vh;
     background-image: url(/imagenes/fondo.JPG);
   }
   .nosotros .nleft {
-    width: 100%;
     background-image: url(/imagenes/oficina.webp);
     background-size: cover;
     background-position: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .nosotros .nright {
-    width: 100%;
     padding: 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .nosotros .nright p {
     font-size: 15px;
     margin-bottom: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .nosotros .nright h3 {
     text-align: center;
@@ -214,6 +199,14 @@ form a {
   .hamburguesa {
     display: none;
   }
+  .displayd, .nosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
   .juegos {
     max-width: 1500px;
     max-height: 1500px;
@@ -228,12 +221,6 @@ form a {
   }
   .nosotros {
     height: 600px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin-top: 30px;
   }
   .nosotros .nleft {

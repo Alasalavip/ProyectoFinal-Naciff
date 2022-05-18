@@ -1,4 +1,4 @@
-@import "fotos";
+@import "partials";
 *{
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ footer {
         text-align: center;
         font-size: 30px;
         font-weight: 600;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: $font;
     }
     //como se orientan los links del footer//
     ul {
@@ -51,9 +51,9 @@ main {
 
 .flecha {
     @include size(40px, 40px);
-        background-color: white;
-        border: 3px solid black;
-        color: black;
+        background-color: $blanco;
+        border: 3px solid $negro;
+        color: $negro;
         position: fixed;
         bottom: 20px;
         right: 20px;
@@ -86,7 +86,7 @@ form {
     background-image: $myform;
     padding: 20px;
     font-weight: 600;
-    color: white;
+    color: $blanco;
     border-radius: 1%;
     min-width: 380px; 
         textarea {
@@ -95,11 +95,11 @@ form {
         }
         a {
             text-decoration: none;
-            color: white;
+            color: $blanco;
         } 
 }
 
-$base: white;
+$base: $blanco;
 $cards: (
     c1: $base,
     c2: darken($base, 2%),
@@ -119,33 +119,31 @@ $cards: (
     .noham {
         display:none;
     }
+    .displaym {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%
+    }
     //la pagina "sobre nosotros" se divide en izquierda y derecha//
     .nosotros {
         height: 100vh;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+       @extend .displaym;
         background-image: $myfondo;
         //parte izquierda//
         .nleft {
-            width: 100%;
             background-image: $myofi;
             background-size: cover;
             background-position: center;
-            display: flex;
-            flex-wrap: wrap;
+            @extend .displaym;
         }
         //parte derecha//
         .nright{
-            width:100%;
             padding: 5px;
-            display: flex;
-            flex-wrap: wrap;
+            @extend .displaym;
             p {
                 font-size: 15px;
                 margin-bottom: 0px;
-                display: flex;
-                flex-wrap: wrap;
+               @extend .displaym;
             }
             h3 {
                 text-align: center;
@@ -155,16 +153,16 @@ $cards: (
             //mas info//
             a {
                 height: 50px;
-                background-color: white;
-                color: black;
+                background-color: $blanco;
+                color: $negro;
                 padding: 10px 20px;
                 text-decoration: none;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-family: $font;
                 border-radius: 10px;
-                border: 3px solid black;
+                border: 3px solid $negro;
                 font-weight: 600;
                     &:hover{
-                        background-color: darkgray;
+                        background-color: $gris;
                         }
             }
             
@@ -183,7 +181,11 @@ $cards: (
    .hamburguesa {
        display: none;
    } 
-
+   .displayd {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%
+}
    .juegos {
     max-width: 1500px;
     max-height: 1500px;
@@ -198,9 +200,7 @@ $cards: (
    }
    .nosotros {
       height: 600px;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
+     @extend .displayd;
       margin-top: 30px;
       .nleft {
           width: 50%;
@@ -222,16 +222,16 @@ $cards: (
         }
         a {
             height: 50px;
-            background-color: white;
-            color: black;
+            background-color: $blanco;
+            color: $negro;
             padding: 10px 20px;
             text-decoration: none;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: $font;
             border-radius: 10px;
-            border: 3px solid black;
+            border: 3px solid $negro;
             font-weight: 600;
             &:hover {
-                background-color: darkgray;
+                background-color: $gris;
             }
         }
       }
