@@ -1,0 +1,21 @@
+//vista mobil//
+@media only screen and (min-width:280px) and (max-width:991px) {
+    //nav bar no se ve en vista mobil//
+     @import "nosotrosm";
+     .noham {
+         display:none;
+     }
+     .displaym {
+         display: flex;
+         flex-wrap: wrap;
+         width: 100%
+     }
+     .juegos {
+         display: none;
+     }
+     .mobil {
+         max-width: 1500px;
+         max-height: 1500px;
+         margin: auto;
+     }
+ }

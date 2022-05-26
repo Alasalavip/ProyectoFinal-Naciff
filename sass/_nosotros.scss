@@ -1,0 +1,40 @@
+.nosotros {
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+    .nleft {
+        width: 50%;
+        background-image: $myofi;
+        background-size: cover;
+        background-position: center;
+    }
+    .nright {
+      width: 50%;
+      padding: 20px;
+      p{
+          font-size: 25px;
+          margin-bottom: 20px;
+      }
+      h3 {
+          text-align: center;
+          padding-bottom: 10px;
+          text-transform: capitalize;
+      }
+      a {
+          height: 50px;
+          background-color: $blanco;
+          color: $negro;
+          padding: 10px 20px;
+          text-decoration: none;
+          font-family: $font;
+          border-radius: 10px;
+          border: 3px solid $negro;
+          font-weight: 600;
+          &:hover {
+              background-color: $gris;
+          }
+      }
+    }
+}

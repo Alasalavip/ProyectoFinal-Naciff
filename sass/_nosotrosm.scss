@@ -1,0 +1,44 @@
+ //la pagina "sobre nosotros" se divide en izquierda y derecha//
+ .nosotros {
+    height: 100vh;
+   @extend .displaym;
+    background-image: $myfondo;
+    //parte izquierda//
+    .nleft {
+        background-image: $myofi;
+        background-size: cover;
+        background-position: center;
+        @extend .displaym;
+    }
+    //parte derecha//
+    .nright{
+        padding: 5px;
+        @extend .displaym;
+        p {
+            font-size: 15px;
+            margin-bottom: 0px;
+           @extend .displaym;
+        }
+        h3 {
+            text-align: center;
+            padding-bottom: 0px;
+            text-transform: capitalize;
+        }
+        //mas info//
+        a {
+            height: 50px;
+            background-color: $blanco;
+            color: $negro;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-family: $font;
+            border-radius: 10px;
+            border: 3px solid $negro;
+            font-weight: 600;
+                &:hover{
+                    background-color: $gris;
+                    }
+        }
+        
+    }
+}

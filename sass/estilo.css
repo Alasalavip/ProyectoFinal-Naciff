@@ -1,24 +1,39 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.card--c1 {
+  background-color: white;
 }
 
-html {
-  min-height: 100%;
-  position: relative;
-  scroll-behavior: smooth;
+.card--c2 {
+  background-color: #fafafa;
 }
 
-body {
-  margin: 0;
-  margin-bottom: 40px;
+.card--c3 {
+  background-color: #f2f2f2;
+}
+
+.card--c4 {
+  background-color: #ebebeb;
+}
+
+.card--c5 {
+  background-color: #e6e6e6;
+}
+
+.card--c6 {
+  background-color: #cccccc;
+}
+
+.display, form textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
 }
 
 footer {
-  height: 60px;
   width: 100%;
+  height: 60px;
   left: 0;
   bottom: 0;
   background-size: cover;
@@ -40,6 +55,166 @@ footer ul {
 footer a {
   color: #565A63;
   margin: 10px;
+}
+
+footer a:hover {
+  color: darkgray;
+}
+
+form {
+  margin: auto;
+  background-image: url(/imagenes/jeroglificos.jpg);
+  padding: 20px;
+  font-weight: 600;
+  color: white;
+  border-radius: 1%;
+  min-width: 380px;
+}
+
+form textarea {
+  -ms-flex-negative: 50%;
+      flex-shrink: 50%;
+}
+
+form a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (min-width: 992px) {
+  .nosotros {
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .nosotros .nleft {
+    width: 50%;
+    background-image: url(/imagenes/oficina.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  .nosotros .nright {
+    width: 50%;
+    padding: 20px;
+  }
+  .nosotros .nright p {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .nosotros .nright h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+  }
+  .nosotros .nright a {
+    height: 50px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-weight: 600;
+  }
+  .nosotros .nright a:hover {
+    background-color: darkgray;
+  }
+  .hamburguesa {
+    display: none;
+  }
+  .juegos {
+    max-width: 1500px;
+    max-height: 1500px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .mobil {
+    display: none;
+  }
+  form {
+    min-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 991px) {
+  .nosotros {
+    height: 100vh;
+    background-image: url(/imagenes/fondo.JPG);
+  }
+  .nosotros .nleft {
+    background-image: url(/imagenes/oficina.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  .nosotros .nright {
+    padding: 5px;
+  }
+  .nosotros .nright p {
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+  .nosotros .nright h3 {
+    text-align: center;
+    padding-bottom: 0px;
+    text-transform: capitalize;
+  }
+  .nosotros .nright a {
+    height: 50px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-weight: 600;
+  }
+  .nosotros .nright a:hover {
+    background-color: darkgray;
+  }
+  .noham {
+    display: none;
+  }
+  .displaym, .nosotros, .nosotros .nleft, .nosotros .nright, .nosotros .nright p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .juegos {
+    display: none;
+  }
+  .mobil {
+    max-width: 1500px;
+    max-height: 1500px;
+    margin: auto;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 main {
@@ -85,176 +260,8 @@ main {
   max-height: 400px;
 }
 
-.display, form textarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-}
-
-form {
-  margin: auto;
-  background-image: url(/imagenes/jeroglificos.jpg);
-  padding: 20px;
-  font-weight: 600;
-  color: white;
-  border-radius: 1%;
-  min-width: 380px;
-}
-
-form textarea {
-  -ms-flex-negative: 50%;
-      flex-shrink: 50%;
-}
-
-form a {
-  text-decoration: none;
-  color: white;
-}
-
-.card--c1 {
-  background-color: white;
-}
-
-.card--c2 {
-  background-color: #fafafa;
-}
-
-.card--c3 {
-  background-color: #f2f2f2;
-}
-
-.card--c4 {
-  background-color: #ebebeb;
-}
-
-.card--c5 {
-  background-color: #e6e6e6;
-}
-
-.card--c6 {
-  background-color: #cccccc;
-}
-
-@media only screen and (min-width: 280px) and (max-width: 991px) {
-  .noham {
-    display: none;
-  }
-  .displaym, .nosotros, .nosotros .nleft, .nosotros .nright, .nosotros .nright p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
-  }
-  .nosotros {
-    height: 100vh;
-    background-image: url(/imagenes/fondo.JPG);
-  }
-  .nosotros .nleft {
-    background-image: url(/imagenes/oficina.webp);
-    background-size: cover;
-    background-position: center;
-  }
-  .nosotros .nright {
-    padding: 5px;
-  }
-  .nosotros .nright p {
-    font-size: 15px;
-    margin-bottom: 0px;
-  }
-  .nosotros .nright h3 {
-    text-align: center;
-    padding-bottom: 0px;
-    text-transform: capitalize;
-  }
-  .nosotros .nright a {
-    height: 50px;
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 10px;
-    border: 3px solid black;
-    font-weight: 600;
-  }
-  .nosotros .nright a:hover {
-    background-color: darkgray;
-  }
-  .juegos {
-    display: none;
-  }
-  .mobil {
-    max-width: 1500px;
-    max-height: 1500px;
-    margin: auto;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .hamburguesa {
-    display: none;
-  }
-  .displayd, .nosotros {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
-  }
-  .juegos {
-    max-width: 1500px;
-    max-height: 1500px;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-  .mobil {
-    display: none;
-  }
-  form {
-    min-width: 600px;
-  }
-  .nosotros {
-    height: 600px;
-    margin-top: 30px;
-  }
-  .nosotros .nleft {
-    width: 50%;
-    background-image: url(/imagenes/oficina.webp);
-    background-size: cover;
-    background-position: center;
-  }
-  .nosotros .nright {
-    width: 50%;
-    padding: 20px;
-  }
-  .nosotros .nright p {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-  .nosotros .nright h3 {
-    text-align: center;
-    padding-bottom: 10px;
-    text-transform: capitalize;
-  }
-  .nosotros .nright a {
-    height: 50px;
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 10px;
-    border: 3px solid black;
-    font-weight: 600;
-  }
-  .nosotros .nright a:hover {
-    background-color: darkgray;
-  }
+.logo {
+  width: 100px;
+  height: 100px;
 }
 /*# sourceMappingURL=estilo.css.map */

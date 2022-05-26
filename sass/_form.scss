@@ -1,0 +1,18 @@
+form {
+    @extend .nav-link;
+    margin: auto;
+    background-image: $myform;
+    padding: 20px;
+    font-weight: 600;
+    color: $blanco;
+    border-radius: 1%;
+    min-width: 380px; 
+        textarea {
+           @extend .display;
+            flex-shrink: 50%;
+        }
+        a {
+            text-decoration: none;
+            color: $blanco;
+        } 
+}

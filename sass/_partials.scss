@@ -5,3 +5,26 @@ $font: Verdana, Geneva, Tahoma, sans-serif;
 $blanco: white;
 $gris: darkgray;
 $negro: black;
+@mixin size($ancho,$alto) {
+    height: $alto;
+    width: $ancho;
+}
+$base: $blanco;
+$cards: (
+    c1: $base,
+    c2: darken($base, 2%),
+    c3: darken($base, 5%),
+    c4:darken($base, 8%),
+    c5:darken($base, 10%),
+    c6: darken($base, 20%),
+);
+@each $c, $col in $cards {
+    .card--#{$c}{
+      background-color: $col;
+    }
+}
+.display {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%
+}

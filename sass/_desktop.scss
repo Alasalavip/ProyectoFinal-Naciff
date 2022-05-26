@@ -1,0 +1,19 @@
+//vista desktop//
+@media only screen and (min-width:992px) {
+    @import "nosotros";
+    .hamburguesa {
+       display: none;
+   } 
+   .juegos {
+    max-width: 1500px;
+    max-height: 1500px;
+    margin: auto;
+    margin-bottom: 20px;
+   }
+   .mobil {
+       display: none;
+   }
+   form {
+      min-width: 600px;
+   }
+}
