@@ -1,8 +1,6 @@
 @import "partials";
 @import "footer";
 @import "form";
-@import "desktop";
-@import "mobil";
 *{
     margin: 0;
     padding: 0;
@@ -54,3 +52,5 @@ main {
     width: 100px;
     height: 100px;
 }
+@import "mobil";
+@import "desktop";

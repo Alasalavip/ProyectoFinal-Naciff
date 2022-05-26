@@ -81,124 +81,6 @@ form a {
   color: white;
 }
 
-@media only screen and (min-width: 992px) {
-  .nosotros {
-    height: 600px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
-    margin-top: 30px;
-  }
-  .nosotros .nleft {
-    width: 50%;
-    background-image: url(/imagenes/oficina.webp);
-    background-size: cover;
-    background-position: center;
-  }
-  .nosotros .nright {
-    width: 50%;
-    padding: 20px;
-  }
-  .nosotros .nright p {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-  .nosotros .nright h3 {
-    text-align: center;
-    padding-bottom: 10px;
-    text-transform: capitalize;
-  }
-  .nosotros .nright a {
-    height: 50px;
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 10px;
-    border: 3px solid black;
-    font-weight: 600;
-  }
-  .nosotros .nright a:hover {
-    background-color: darkgray;
-  }
-  .hamburguesa {
-    display: none;
-  }
-  .juegos {
-    max-width: 1500px;
-    max-height: 1500px;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-  .mobil {
-    display: none;
-  }
-  form {
-    min-width: 600px;
-  }
-}
-
-@media only screen and (min-width: 280px) and (max-width: 991px) {
-  .nosotros {
-    height: 100vh;
-    background-image: url(/imagenes/fondo.JPG);
-  }
-  .nosotros .nleft {
-    background-image: url(/imagenes/oficina.webp);
-    background-size: cover;
-    background-position: center;
-  }
-  .nosotros .nright {
-    padding: 5px;
-  }
-  .nosotros .nright p {
-    font-size: 15px;
-    margin-bottom: 0px;
-  }
-  .nosotros .nright h3 {
-    text-align: center;
-    padding-bottom: 0px;
-    text-transform: capitalize;
-  }
-  .nosotros .nright a {
-    height: 50px;
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 10px;
-    border: 3px solid black;
-    font-weight: 600;
-  }
-  .nosotros .nright a:hover {
-    background-color: darkgray;
-  }
-  .noham {
-    display: none;
-  }
-  .displaym, .nosotros, .nosotros .nleft, .nosotros .nright, .nosotros .nright p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
-  }
-  .juegos {
-    display: none;
-  }
-  .mobil {
-    max-width: 1500px;
-    max-height: 1500px;
-    margin: auto;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -263,5 +145,123 @@ main {
 .logo {
   width: 100px;
   height: 100px;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 991px) {
+  .nosotros {
+    height: 100vh;
+    background-image: url(/imagenes/fondo.JPG);
+  }
+  .nosotros .nleft {
+    background-image: url(/imagenes/oficina.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  .nosotros .nright {
+    padding: 5px;
+  }
+  .nosotros .nright p {
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+  .nosotros .nright h3 {
+    text-align: center;
+    padding-bottom: 0px;
+    text-transform: capitalize;
+  }
+  .nosotros .nright a {
+    height: 50px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-weight: 600;
+  }
+  .nosotros .nright a:hover {
+    background-color: darkgray;
+  }
+  .noham {
+    display: none;
+  }
+  .displaym, .nosotros, .nosotros .nleft, .nosotros .nright, .nosotros .nright p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .juegos {
+    display: none;
+  }
+  .mobil {
+    max-width: 1500px;
+    max-height: 1500px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .nosotros {
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .nosotros .nleft {
+    width: 50%;
+    background-image: url(/imagenes/oficina.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  .nosotros .nright {
+    width: 50%;
+    padding: 20px;
+  }
+  .nosotros .nright p {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .nosotros .nright h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+  }
+  .nosotros .nright a {
+    height: 50px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-weight: 600;
+  }
+  .nosotros .nright a:hover {
+    background-color: darkgray;
+  }
+  .hamburguesa {
+    display: none;
+  }
+  .juegos {
+    max-width: 1500px;
+    max-height: 1500px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .mobil {
+    display: none;
+  }
+  form {
+    min-width: 600px;
+  }
 }
 /*# sourceMappingURL=estilo.css.map */
