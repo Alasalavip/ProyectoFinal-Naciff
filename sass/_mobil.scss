@@ -17,5 +17,20 @@
          max-width: 1500px;
          max-height: 1500px;
          margin: auto;
+         
+         .card{
+             
+             .card-body {
+                 min-height: 280px;
+                 max-height: 280px;
+                 
+             }
+         }
      }
+     .slide {
+        border: solid 10px sandybrown;
+        margin: auto;
+        max-width: 1200px;
+    }
+   
  }

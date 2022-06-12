@@ -7,11 +7,7 @@
         border: solid black 1px;
     }
 }
-.slide {
-    border: solid 10px sandybrown;
-    margin: auto;
-    max-width: 1200px;
-}
+
 .carousel-control {
     &:hover {
         background-color: darkgray;
@@ -22,11 +18,21 @@
     .card-body {
     background-image:$myform;
     color: white;
-}
+    min-height: 210px;
+    }
+    .card-text  {
+        font-size: 18px;
+        font-weight: 400;
+        min-height: 100px;
+        
+    }
 }
 
 .linkr{
     &:hover {
         color: darkgray;
+        
     }
 }
+
+
